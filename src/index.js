@@ -1,10 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import ComponenteComProps from "./componentes/ComponenteComProps";
+import ComponenteComFilhos from "./componentes/ComponentesComFilhos";
+import Cartao from "./componentes/Layout/Card";
+import PrimerioComponente from "./componentes/PrimeiroComponente";
+import "./index.css";
 
 ReactDOM.render(
-  <h1>Hello World</h1>,
-  document.getElementById('root')
+  <div>
+    <PrimerioComponente />
+    
+    <ComponenteComFilhos titulo="Capitao" filho="Filho da Camareira">
+      <PrimerioComponente></PrimerioComponente>
+    </ComponenteComFilhos>
+
+    <Cartao titulo="Cartao #1">
+      <PrimerioComponente></PrimerioComponente>
+    </Cartao>
+  </div>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

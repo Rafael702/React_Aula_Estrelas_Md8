@@ -8,15 +8,7 @@ import "./index.css";
 
 ReactDOM.render(
   <div>
-    <PrimerioComponente />
-    
-    <ComponenteComFilhos titulo="Capitao" filho="Filho da Camareira">
-      <PrimerioComponente></PrimerioComponente>
-    </ComponenteComFilhos>
-
-    <Cartao titulo="Cartao #1">
-      <PrimerioComponente></PrimerioComponente>
-    </Cartao>
+    <Cartao titulo="Cartao #1" conteudo="Aulas desse cartao"/>
   </div>,
   document.getElementById("root")
 );

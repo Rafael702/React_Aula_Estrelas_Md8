@@ -1,4 +1,5 @@
 import react from "react";
+import "./Card.css";
 
 function Cartao(props) {
   return (

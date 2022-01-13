@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ComponenteComProps from "./componentes/ComponenteComProps";
-import ComponenteComFilhos from "./componentes/ComponentesComFilhos";
-import Cartao from "./componentes/Layout/Card";
-import PrimerioComponente from "./componentes/PrimeiroComponente";
+import App from "./App"
+
 import "./index.css";
 
 ReactDOM.render(
-  <div>
-    <Cartao titulo="Cartao #1" conteudo="Aulas desse cartao"/>
-  </div>,
+ <App/> ,
   document.getElementById("root")
 );
 
